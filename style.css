@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    background-color: white;
+    width: 350px;
+    height: 450px;
+    border-radius: 1.5rem;
+    font-family: "Kumbh Sans", sans-serif;
+    grid-template-areas:
+        "num1 num2 num3"
+        "follow likes photo";
+    /* Style the Column Spacing */
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 1rem 1rem 0px 0px;
+}
+
+.pfp {
+    position: relative;
+    top: -50px;
+    left: 125px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 3.8rem;
+
+}
+
+.info {
+    padding-top: 1.2rem;
+    display: flex;
+    padding-left: 7rem;
+    font-size: 18px;
+    padding-bottom: .8rem;
+
+
+}
+
+.age {
+    padding-left: .7rem;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.name {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.Pics {
+    max-height: 210px;
+}
+
+.place {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    padding-bottom: 3rem;
+}
+
+.numbers {
+    border: 1px solid hsl(0, 0%, 59%);
+    padding-bottom: 2.2rem;
+    border-radius: 0px 0px 1.6rem 1.6rem;
+    padding-top: 2rem;
+}
+
+.Nums {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    font-size: 20;
+
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: .7rem;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.follow {
+    padding-right: 2rem;
+}
+
+.likes {
+    padding-right: 2.5rem;
+}
+
+.photo {
+    padding-right: .5rem;
+}
